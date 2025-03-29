@@ -39,10 +39,3 @@ class Extraccion:
         
         print("Extracción completada.")
         return df_estudiantes, df_programas
-    
-    #def cargar_tabla_sql(self, tabla):
-    #    conn = self.conectar()
-    #    query = f"SELECT * FROM {tabla}"
-    #    df = pd.read_sql(query, conn)
-    #    conn.close()
-    #    return df
