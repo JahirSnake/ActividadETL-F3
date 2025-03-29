@@ -1,0 +1,10 @@
+Requirements
+
+-Python 3.x
+-SQL Server DB
+-Prefect
+-Pandas
+-PyODBC
+-Numpy
+-OpenPyXL
+-Matplotlib
