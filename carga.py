@@ -189,8 +189,7 @@ class Carga:
         df_programas = self.filtrar_registrosBD(df_programas, "programas_limpio", "persnies")
         df_estudiantes_matriculados = self.filtrar_registrosBD(df_estudiantes_matriculados, 'estudiantes_matriculados','percod')
 
-
-        
+       
         # Ingresar los datos de los dataframes a SQL server por medio de la funcion insertar datos SQL
         tabla1= 'estudiantes_limpio'
         tabla2= 'programas_limpio'
@@ -201,14 +200,3 @@ class Carga:
         self.insertar_datos_sql(tabla3, df_estudiantes_matriculados)
    
         print("Carga completada.")
-    
-    #def insertar_datos_sql(self, tabla, df):
-    #    conn = self.conectar()
-    #    cursor = conn.cursor()
-    #    for _, row in df.iterrows():
-    #        valores = tuple(row)
-    #        placeholders = ", ".join(["?" for _ in row])
-    #        sql = f"INSERT INTO {tabla} VALUES ({placeholders})"
-    #        cursor.execute(sql, valores)
-    #    conn.commit()
-    #    conn.close()

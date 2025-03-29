@@ -43,7 +43,7 @@ class Transformacion:
 
     def transformacion(self):
         #df_estudiantes, df_programas = extr.extraccion()
-        extractor = extr.Extraccion("127.0.0.1", "actividadETL", "sa", "12345678")
+        extractor = extr.Extraccion("127.0.0.1", "actividadETL", "sa", "***********")
         df_estudiantes, df_programas = extractor.extraccion()
         print("Iniciando transformación de datos...")
     

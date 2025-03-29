@@ -7,7 +7,7 @@ from carga import Carga
 SERVER = "127.0.0.1"
 DATABASE = "actividadETL"
 USERNAME = "sa"
-PASSWORD = "12345678"
+PASSWORD = "************"
 
 # Tarea de Extracción
 @task
